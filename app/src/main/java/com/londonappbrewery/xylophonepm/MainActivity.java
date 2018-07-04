@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         // new SoundPool
         mSoundPool = new SoundPool(NR_OF_SIMULTANEOUS_SOUNDS , AudioManager.STREAM_MUSIC , 0 );
 
-        // TODO: Load and get the IDs to identify the sounds
+        // IDs to identify the sounds
         mASoundId = mSoundPool.load(getApplicationContext() , R.raw.note6_a ,1);
         mBSoundId = mSoundPool.load(getApplicationContext() , R.raw.note7_b , 1);
         mCSoundId = mSoundPool.load(getApplicationContext() , R.raw.note1_c , 1);
