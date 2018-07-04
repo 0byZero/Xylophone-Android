@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private final int PRIORITY = 0;
     private final float NORMAL_PLAY_RATE = 1.0f;
 
-    // TODO: Add member variables here
+    // member variables
     private SoundPool mSoundPool;
     private int mCSoundId;
     private int mDSoundId;
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // TODO: Create a new SoundPool
+        // new SoundPool
         mSoundPool = new SoundPool(NR_OF_SIMULTANEOUS_SOUNDS , AudioManager.STREAM_MUSIC , 0 );
 
         // TODO: Load and get the IDs to identify the sounds
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         mGSoundId = mSoundPool.load(getApplicationContext() , R.raw.note5_g , 1);
     }
 
-    // TODO: Add the play methods triggered by the buttons
+    // play methods triggered by the buttons
         public void playA(View V) {
             Log.d("Red button ","working");
             mSoundPool.play(mASoundId,LEFT_VOLUME,RIGHT_VOLUME,NO_LOOP,PRIORITY ,NORMAL_PLAY_RATE);
